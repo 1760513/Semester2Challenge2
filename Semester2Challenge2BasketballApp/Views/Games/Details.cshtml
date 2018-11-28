@@ -1,0 +1,66 @@
+﻿@model Semester2Challenge2BasketballApp.Models.Game
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Game</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.DateandTime)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DateandTime)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Location)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Location)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FeePayer)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FeePayer)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Fee)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Fee)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Forfeit)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Forfeit)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Player.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Player.Name)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.GameID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
